@@ -1,0 +1,6 @@
+cd /etc/skel/
+sudo mkdir public_html
+cd public_html
+sudoedit index.html
+  --sisältö
+  
