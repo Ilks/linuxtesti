@@ -4,3 +4,14 @@ cd public_html
 sudoedit index.html
   --sisältö
   
+sudo apt-get install git
+git config --global user.email "siiskonen.ilkka@gmail.com"
+git config --global user.name "Ilks"
+git clone https://github.com/Ilks/linuxtesti.git
+cd linuxtesti/
+cd ..
+cp /home/xubuntu/puppet/modules/apache/manifests/init.pp /home/xubuntu/linuxtesti/
+cd linuxtesti/
+git add init.pp 
+git commit
+git push
